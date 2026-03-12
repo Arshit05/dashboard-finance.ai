@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoSeek AI — Find Any Moment in Any Video</title>
+  <meta name="description" content="VideoSeek AI is an intelligent video context search engine powered by Whisper, CLIP, FAISS and Twelve Labs. Upload a video, search by describing what you see or hear." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>" />
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo"><span>🔍</span> <span class="gradient-text">VideoSeek AI</span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#use-cases">Use Cases</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#cta" class="btn btn-primary">Launch App →</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-bg.png" alt="" aria-hidden="true" />
+  </div>
+  <div class="container">
+    <div class="hero-content" data-animate>
+      <h1>Find <span class="gradient-text">Any Moment</span> in Any Video</h1>
+      <p>
+        Upload a video or paste a YouTube link. Our AI transcribes every word,
+        analyzes every frame, and lets you search through both — instantly.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-primary">🚀 Try VideoSeek AI</a>
+        <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-value">4</div>
+          <div class="stat-label">AI Models</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Search Modes</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">< 1s</div>
+          <div class="stat-label">Query Speed</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-animate>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <img src="assets/demo-screenshot.png" alt="VideoSeek AI Dashboard" class="float" />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TECH RIBBON ═══════════════════ -->
+<section class="tech-ribbon">
+  <div class="container">
+    <div class="tech-item"><span class="tech-icon">🗣️</span> OpenAI Whisper</div>
+    <div class="tech-item"><span class="tech-icon">🖼️</span> OpenAI CLIP</div>
+    <div class="tech-item"><span class="tech-icon">⚡</span> Meta FAISS</div>
+    <div class="tech-item"><span class="tech-icon">🤖</span> Sentence Transformers</div>
+    <div class="tech-item"><span class="tech-icon">☁️</span> Twelve Labs API</div>
+    <div class="tech-item"><span class="tech-icon">🎯</span> Streamlit</div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FEATURES ═══════════════════ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-header" data-animate>
+      <p class="section-label">Capabilities</p>
+      <h2 class="section-title">Powerful Video Understanding</h2>
+      <p class="section-desc">
+        Six AI-powered capabilities that let you find exactly what you're looking for in any video.
+      </p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon purple">🗣️</div>
+        <h3>Whisper Transcription</h3>
+        <p>
+          Automatically transcribe spoken words with OpenAI's state-of-the-art Whisper model.
+          Supports 99+ languages with word-level timestamps.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon pink">🖼️</div>
+        <h3>CLIP Visual Search</h3>
+        <p>
+          Describe what you see in plain English. CLIP embeds each frame so you
+          can search visually — "a cat sitting on a desk" instantly finds it.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon amber">⚡</div>
+        <h3>FAISS Vector Search</h3>
+        <p>
+          Blazing-fast similarity search across thousands of embeddings.
+          Query results return in under one second, even on large videos.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon cyan">📝</div>
+        <h3>Semantic Transcript Search</h3>
+        <p>
+          Go beyond keyword matching. Sentence-transformers understand context
+          and meaning, finding segments that match your intent — not just words.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon green">🎬</div>
+        <h3>Instant Video Playback</h3>
+        <p>
+          Click any result and jump directly to that moment. Works with local
+          video files and YouTube embeds with precise timestamp linking.
+        </p>
+      </div>
+
+      <div class="feature-card" data-animate>
+        <div class="feature-icon indigo">☁️</div>
+        <h3>Twelve Labs Multimodal</h3>
+        <p>
+          Extend your search with Twelve Labs' Marengo model for cross-modal
+          understanding — visual, audio, text-in-video, and logo detection.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="how-header" data-animate>
+      <p class="section-label">Workflow</p>
+      <h2 class="section-title">How VideoSeek AI Works</h2>
+      <p class="section-desc">From video upload to instant search results — four simple steps.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-animate>
+        <div class="step-number">📥</div>
+        <h4>Upload Video</h4>
+        <p>Drag & drop a file or paste a YouTube URL</p>
+      </div>
+      <div class="step" data-animate>
+        <div class="step-number">🔬</div>
+        <h4>AI Processing</h4>
+        <p>Whisper transcribes, CLIP embeds every frame</p>
+      </div>
+      <div class="step" data-animate>
+        <div class="step-number">🔍</div>
+        <h4>Search</h4>
+        <p>Type a query — visual, transcript, or multimodal</p>
+      </div>
+      <div class="step" data-animate>
+        <div class="step-number">🎯</div>
+        <h4>Find Instantly</h4>
+        <p>Jump to exact timestamps with one click</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ USE CASES ═══════════════════ -->
+<section class="use-cases" id="use-cases">
+  <div class="container">
+    <div class="use-cases-header" data-animate>
+      <p class="section-label">Applications</p>
+      <h2 class="section-title">Built For Every Use Case</h2>
+      <p class="section-desc">From content creators to researchers — VideoSeek AI saves hours of manual scrubbing.</p>
+    </div>
+    <div class="use-cases-grid">
+      <div class="use-case-card" data-animate>
+        <div class="use-case-emoji">🎓</div>
+        <div>
+          <h3>Education & Lectures</h3>
+          <p>Search a 2-hour lecture for the exact moment the professor explains "gradient descent" — skip straight to it.</p>
+        </div>
+      </div>
+      <div class="use-case-card" data-animate>
+        <div class="use-case-emoji">📰</div>
+        <div>
+          <h3>Media & Journalism</h3>
+          <p>Find specific quotes, on-screen graphics, or b-roll footage across hours of interview recordings.</p>
+        </div>
+      </div>
+      <div class="use-case-card" data-animate>
+        <div class="use-case-emoji">🎥</div>
+        <div>
+          <h3>Content Creation</h3>
+          <p>Quickly locate highlight-worthy moments in raw footage to create clips, reels, and compilations.</p>
+        </div>
+      </div>
+      <div class="use-case-card" data-animate>
+        <div class="use-case-emoji">🔐</div>
+        <div>
+          <h3>Security & Surveillance</h3>
+          <p>Search surveillance footage by visual description — "person carrying a red bag" — without watching hours of tapes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA ═══════════════════ -->
+<section class="cta" id="cta">
+  <div class="container">
+    <div class="cta-inner" data-animate>
+      <p class="section-label">Get Started</p>
+      <h2 class="section-title">Ready to Search Smarter?</h2>
+      <p class="section-desc">
+        VideoSeek AI runs locally on your machine. No data leaves your environment.
+        Open-source, private, and free.
+      </p>
+      <div class="cta-actions">
+        <a href="http://localhost:8501" target="_blank" class="btn btn-primary">🚀 Open VideoSeek AI</a>
+        <a href="https://github.com" target="_blank" class="btn btn-secondary">⭐ Star on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo"><span>🔍</span> VideoSeek AI</div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#use-cases">Use Cases</a>
+    </div>
+    <div class="footer-copy">© 2026 VideoSeek AI — Built with Whisper, CLIP, FAISS & Twelve Labs</div>
+  </div>
+</footer>
+
+<!-- ═══════════════════ JS ═══════════════════ -->
+<script>
+/* Navbar scroll effect */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* Scroll-reveal animation */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 100);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+/* Mobile toggle (simple) */
+const toggle = document.getElementById('mobileToggle');
+const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => {
+  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+  links.style.flexDirection = 'column';
+  links.style.position = 'absolute';
+  links.style.top = '60px';
+  links.style.right = '24px';
+  links.style.background = 'rgba(10,10,20,.96)';
+  links.style.padding = '20px';
+  links.style.borderRadius = '12px';
+  links.style.border = '1px solid rgba(124,58,237,.3)';
+});
+
+/* Smooth anchor scrolling */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+    if (links) links.style.display = '';
+  });
+});
+</script>
+</body>
+</html>
